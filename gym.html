@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: "Baloo Bhai", cursive; 
+            color: rgb(2, 1, 1);
+            margin: 0px;
+            padding: 0px;
+            background: url(gym11.jpg  );
+            background-size: cover;
+            height: 100%;
+            overflow: scroll;
+            opacity: 1;
+        }
+
+        .left img {
+            width: 25px;
+            height: 100px;
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 60px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 136px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            line-height: 25px;
+            font-size: 28px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+
+        .mid {position: absolute;
+            width: 10px;
+            align-items: center;
+            display: block;
+            left: 200px;
+            top: 10px;
+    
+        
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 43px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+
+        .navbar {
+            display: inline-block;
+            width: 2400px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .navbar li a {
+            display: flex;
+            align-items: center;
+            color: rgb(144, 4, 4);
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: burlywood;
+            color: black;
+            padding: 4px 14px;
+            border: solid 2px grey;
+            border-radius: 10px;
+            font-size :20px;
+            cursor: pointer;
+            }
+        
+        .btn:hover{color: black;
+        background-color: gray;}
+
+        .container{
+            margin: 100px 122px;
+            padding:75px 75px;
+        width: 33%;
+    
+    }
+    .container button{display: block;
+        margin: 12px;
+
+        text-align: center;}
+    .container h1{font-family:"Baloo Bhai",cursive;
+text-align: center;}
+    .container form{font-family: "Baloo Bhai",cursive;}
+    .form-group input{text-align: center;
+    display: block;
+width: 300px;
+margin: 12px auto;
+padding: 12px;
+font-size: 20px;
+border-radius: 10px;}
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="left">
+            <img src="logo2.png" alt="hi">
+            <div>Fitness router</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="a">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">E-Mail Us Now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1 >Join best gym of delhi</h1>
+        <form action="noaction.php">
+<div class="form-group">
+    <input type="text" placeholder="Enter your name">
+</div>
+<div class="form-group">
+    <input type="text" placeholder="Enter your age">
+</div>
+<div class="form-group">
+    <input type="text" placeholder="Enter your locality">
+</div>
+<div class="form-group">
+    <input type="text" placeholder="Enter your gender">
+</div>
+<button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
